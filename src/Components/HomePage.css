@@ -1,0 +1,49 @@
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchContainer {
+  width: fit-content;
+  margin: 8px auto;
+}
+
+.searchContainer input {
+  width: 60vw;
+  height: 20px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+}
+
+.searchContainer input:focus {
+  outline: none;
+}
+
+.loaderContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 5px solid lightgray;
+  border-top: 5px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
